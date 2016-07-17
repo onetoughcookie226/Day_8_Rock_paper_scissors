@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <title>Rock, paper, scissors</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="style.css" >
-
 </head>
 <body>
     <div class="container-fluid">
         <div class="title">
-            <h2>Computer</h2>
-            <h2>You</h2>
+            <h1 class="text-center text-danger">Choose your weapon</h1>
         </div>
-        <img class="img-responsive" src="right_fist.png">
-        <p>Choose your weapon</p>
+        <div class="row buttons">
+           <div class="col-xs-4"><button class="btn btn-block"><i class="fa fa-hand-rock-o"></i>&nbsp;Rock</button></div>
+           <div class="col-xs-4"><button class="btn btn-block"><i class="fa fa-hand-paper-o"></i>Paper</button></div>
+           <div class="col-xs-4"><button class="btn btn-block"><i class="fa fa-hand-scissors-o"></i>Scissors</button></div>
+        </div>&nbsp;
+        <div class="row fists">
+        <div class="col-xs-4"><img class="img-responsive" src="left_fist.png"></div>
+        <div class="col-xs-4"><img class="img-responsive" src="right_fist.png"></div>
+        </div>
     </div>
     <footer></footer>
     <script src="rock.js"></script>
