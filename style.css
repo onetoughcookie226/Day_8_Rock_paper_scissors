@@ -1,3 +1,19 @@
 body {
     background-color: cadetblue;
 }
+
+#myContainer {
+    position: relative;
+}
+
+#myAnimation {
+    position: absolute;
+}
+
+
+/*.shake {
+    -webkit-animation: shake 1s 2;
+    -moz-animation: shake 1s 2;
+    -ms-animation: shake 1s 2;
+    animation: shake 1s 2;
+} */
