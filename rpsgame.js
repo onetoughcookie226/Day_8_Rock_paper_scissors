@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    console.log("i am about to shake 1");
+    console.log("i am about to shake the left-fist");
 
     function myMove() {
         $("#left-fist").addClass("animated shake") ;
@@ -9,7 +9,16 @@ $(document).ready(function () {
         myMove();
     });
 
+    $("#paper").click(function() {
+        console.log("test");
+        myMove();
+    });
 
+    $("#scissors").click(function() {
+        myMove();
+    });
+
+    //keep scores of the loses.
 
   /*  $("#rock").click(function myMove () {
      console.log("my move was called");
