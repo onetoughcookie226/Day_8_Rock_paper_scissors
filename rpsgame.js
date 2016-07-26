@@ -1,3 +1,7 @@
+//shake fists after clicking the buttons"
+
+var openFist = ["rock", "paper", "scissors"];
+
 $(document).ready(function () {
     console.log("i am about to shake the left-fist");
 
@@ -8,19 +12,16 @@ $(document).ready(function () {
        $("#right-fist").addClass("animated shake");
     };
 
-    $("#rock").click(function() {
+  $( function () {
+
+    });
+
+    $(".buttons").click(function() {
         leftFistShake.call(this);
         rightFistShake.call(this);
     });
 
-    $("#paper").click(function() {
-        console.log("test");
-        leftFistShake();
-    });
 
-    $("#scissors").click(function() {
-        leftFistShake();
-    });
 
     //keep scores of the loses.
 

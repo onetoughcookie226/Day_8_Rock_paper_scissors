@@ -16,6 +16,8 @@ body {
     float:right;
 };
 
+/*Animate and shake move
+========================*/
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
@@ -77,4 +79,23 @@ body {
     -ms-animation: shake 1s 2;
     animation: shake 1s 2;
 }
+
+/* Styling open fist weapons
+=============================*/
+.rock {
+
+}
+
+/* .paper {
+    height:110px;
+    width: 110px;
+
+} */
+.small {
+    max-height: 150px;
+}
+ .scissors {
+
+ }
+
 
