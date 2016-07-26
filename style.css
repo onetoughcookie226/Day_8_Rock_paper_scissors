@@ -10,6 +10,12 @@ body {
     position: absolute;
 }
 
+#rightFistShake {
+    /*position: absolute; */
+    padding-left: 20px;
+    float:right;
+};
+
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
