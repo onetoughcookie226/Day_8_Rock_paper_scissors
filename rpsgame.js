@@ -16,15 +16,28 @@ $(document).ready(function () {
         rightFistShake.call(this);
     });
     // if you select rock, right-fist will shake and display rock
-
     function rightFistResultPaper() {
         $("#result-right-paper").css('display', 'inline-block');
     }
+    function rightFistResult() {
+        $("#right-fist").css('display','none');
+    }
+
+  //
 
     $("#paper").click(function() {
-        rightFistResultPaper()
+        setTimeout(function () {rightFistResult.call(this)}, 2000);
+        setTimeout(function() {rightFistResultPaper.call(this)}, 2000);
+
+        //  rightFistResultPaper.call(this); 2000);
+
+        //  $("#right-fist").hide(1000).delay(100);
+        //rightFistResultPaper.call(this);
+        //rightFistResult.call(this);
+        //rightFistResultPaper.call(this);});
     });
-    
+
+
 //right fist show the selected weapon
 //left fist randomly display a weapon
 //logic part
@@ -34,5 +47,4 @@ $(document).ready(function () {
 //shake fists after clicking the buttons"
 
     //keep scores of the loses.
-
-});
+    });
