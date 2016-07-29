@@ -15,31 +15,28 @@ $(document).ready(function () {
         leftFistShake.call(this);
         rightFistShake.call(this);
     });
-    // if you select rock, right-fist will shake and display rock
-    function rightFistResultPaper() {
-        $("#result-right-paper").css('display', 'inline-block');
-    }
+    // Declaring function to display right-paper, and hide right-fist
     function rightFistResult() {
         $("#right-fist").css('display','none');
     }
+    function rightFistResultPaper() {
+        $("#result-right-paper").css('display', 'inline-block');
+    }
 
-  //
+  //when paper is selected, right-fist will shake, then disaper and display rock
 
     $("#paper").click(function() {
         setTimeout(function () {rightFistResult.call(this)}, 2000);
         setTimeout(function() {rightFistResultPaper.call(this)}, 2000);
-
-        //  rightFistResultPaper.call(this); 2000);
-
-        //  $("#right-fist").hide(1000).delay(100);
-        //rightFistResultPaper.call(this);
-        //rightFistResult.call(this);
-        //rightFistResultPaper.call(this);});
     });
 
+    //left fist randomly display a weapon
+    var randomNum = Math.floor (Math.random() * weapons.length ) +1;
+    console.log(randomNum);
 
-//right fist show the selected weapon
-//left fist randomly display a weapon
+
+
+
 //logic part
 //keep the score
 // show game over after 3 times lost
