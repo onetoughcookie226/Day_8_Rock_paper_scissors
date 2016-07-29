@@ -23,11 +23,28 @@ $(document).ready(function () {
         $("#result-right-paper").css('display', 'inline-block');
     }
 
+    function rightFistResultRock() {
+        $("#result-right-rock").css ('display', 'inline-block');
+    }
+    function rightFistResultScissors() {
+        $("#result-right-scissors").css ('display', 'inline-block');
+    }
+
   //when paper is selected, right-fist will shake, then disaper and display rock
 
     $("#paper").click(function() {
         setTimeout(function () {rightFistResult.call(this)}, 2000);
         setTimeout(function() {rightFistResultPaper.call(this)}, 2000);
+    });
+
+    $("#rock").click(function() {
+        setTimeout(function() {rightFistResult.call(this)}, 2000);
+        setTimeout(function () {rightFistResultRock.call(this)}, 2000);
+    });
+
+    $("#scissors").click(function() {
+       setTimeout(function() {rightFistResult.call(this)}, 2000);
+        setTimeout(function(){ rightFistResultScissors.call(this)}, 2000);
     });
 
     //left fist randomly display a weapon
