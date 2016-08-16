@@ -16,6 +16,13 @@ body {
     float:right;
 };
 
+#captionLeft {
+    position: absolute;
+};
+
+#captionRight {
+
+};
 /*Animate and shake move
 ========================*/
 .animated {
