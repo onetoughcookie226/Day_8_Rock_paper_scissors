@@ -6,6 +6,13 @@ body {
     position: relative;
 }
 
+
+.btn-block {
+    display: block;
+    width: 58%;
+    margin-top: 13px;
+}
+
 #leftFistShake {
     position: absolute;
 }
@@ -17,11 +24,20 @@ body {
 }
 
 #captionLeft {
-    position: absolute;
+    margin-top: 15px;
+
+}
+#captionRight {
+    margin-top: 15px;
 }
 
-#captionRight {
-    position: absolute;
+
+#captionRight > p {
+    text-align: center;
+}
+
+.main-nav {
+    text-align: center;
 }
 /*Animate and shake move
 ========================*/
