@@ -1,15 +1,13 @@
 $(document).ready(function () {
-    console.log("i am about to shake the left-fist");
     //arrays of weapens
     var weapons = ['rock', 'paper', 'scissors'];
-
         //Apply animated shake class to the fists. declare the functions
     function leftFistShake() {
         $("#left-fist").addClass("animated shake") ;
-    };
+    }
     function rightFistShake() {
         $("#right-fist").addClass("animated shake");
-    };
+    }
     //click on buttons and both fists shake
     $(".buttons").click(function() {
         leftFistShake.call(this);
