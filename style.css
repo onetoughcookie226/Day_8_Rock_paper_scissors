@@ -2,6 +2,9 @@ body {
     background-color: #171328;
 }
 
+h1 {
+    color: crimson;
+}
 #myContainer {
     position: relative;
 }

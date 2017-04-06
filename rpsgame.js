@@ -13,9 +13,17 @@ $(document).ready(function () {
         leftFistShake.call(this);
         rightFistShake.call(this);
     });
-    // Declaring function to display right-paper, and hide right-fist
+    // Declaring function to display right-paper, and hide right-fist and left-fist
+
+    // var result = [ 'result-right-paper', 'result-right-rock', 'result-right-scissors'];
+    // for (i = 0; i < result.length; i++){
+    //     document.getElementById(result[i]).style.display = 'inline-block';
+    // }
+
     function rightFistResult() {
         $("#right-fist").css('display','none');
+        $("#left-fist").css('display','none');
+        
     }
     function rightFistResultPaper() {
         $("#result-right-paper").css('display', 'inline-block');
@@ -24,11 +32,21 @@ $(document).ready(function () {
     function rightFistResultRock() {
         $("#result-right-rock").css ('display', 'inline-block');
     }
+
     function rightFistResultScissors() {
         $("#result-right-scissors").css ('display', 'inline-block');
     }
 
-  //when paper is selected, right-fist will shake, then disaper and display rock
+    //Left
+    function leftFistResult() {
+        $("#left-first").css('display', 'none');
+    }
+
+    // function LeftFistResultPaper() {
+    //     $("#result-left-paper").css('display', 'inline-block');
+    // }
+
+  //when paper is selected, shake right-fist, hide right-fist, display rock
 
     $("#paper").click(function() {
         setTimeout(function () {rightFistResult.call(this)}, 2000);
@@ -48,6 +66,13 @@ $(document).ready(function () {
     //left fist randomly display a weapon
     var randomNum = Math.floor (Math.random() * weapons.length ) +1;
     console.log(randomNum);
+
+    //Hide left fist, display the random number
+    $("#paper").click(function(){
+        setTimeout(function () {leftFistResult.call(this)}, 2000);
+        // setTimeout(function() {leftFistResultPaper.call(this)}, 2000);
+
+    });
 
 
 
