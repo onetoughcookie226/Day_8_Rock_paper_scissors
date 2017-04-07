@@ -3,7 +3,10 @@ body {
 }
 
 h1 {
-    color: crimson;
+    color: #d6524d;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+
 }
 #myContainer {
     position: relative;

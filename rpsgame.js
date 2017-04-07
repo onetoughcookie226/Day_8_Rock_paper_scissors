@@ -23,7 +23,7 @@ $(document).ready(function () {
     function rightFistResult() {
         $("#right-fist").css('display','none');
         $("#left-fist").css('display','none');
-        
+
     }
     function rightFistResultPaper() {
         $("#result-right-paper").css('display', 'inline-block');
@@ -42,9 +42,9 @@ $(document).ready(function () {
         $("#left-first").css('display', 'none');
     }
 
-    // function LeftFistResultPaper() {
-    //     $("#result-left-paper").css('display', 'inline-block');
-    // }
+    function leftFistResultPaper() {
+        $("#result-left-paper").css ('display', 'inline-block');
+    }
 
   //when paper is selected, shake right-fist, hide right-fist, display rock
 
