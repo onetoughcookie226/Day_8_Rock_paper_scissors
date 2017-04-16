@@ -1,7 +1,8 @@
 $(document).ready(function () {
     //arrays of weapens
     var weapons = ['rock', 'paper', 'scissors'];
-        //Apply animated shake class to the fists. declare the functions
+
+    //Apply animated shake class to the fists. declare the functions
     function leftFistShake() {
         $("#left-fist").addClass("animated shake") ;
     }
@@ -9,14 +10,19 @@ $(document).ready(function () {
         $("#right-fist").addClass("animated shake");
     }
     //click on buttons and both fists shake
+
     $(".buttons").click(function() {
         leftFistShake.call(this);
         rightFistShake.call(this);
     });
-    // Declaring function to display right-paper, and hide right-fist
+
+    // Declaring function to hide right-fist and left-fist
     function rightFistResult() {
         $("#right-fist").css('display','none');
+        $("#left-fist").css('display','none');
     }
+
+    //Display rightFistResult
     function rightFistResultPaper() {
         $("#result-right-paper").css('display', 'inline-block');
     }
@@ -24,11 +30,12 @@ $(document).ready(function () {
     function rightFistResultRock() {
         $("#result-right-rock").css ('display', 'inline-block');
     }
+
     function rightFistResultScissors() {
         $("#result-right-scissors").css ('display', 'inline-block');
     }
 
-  //when paper is selected, right-fist will shake, then disaper and display rock
+  //when paper is selected, shake right-fist, hide right-fist, display paper
 
     $("#paper").click(function() {
         setTimeout(function () {rightFistResult.call(this)}, 2000);
@@ -42,13 +49,20 @@ $(document).ready(function () {
 
     $("#scissors").click(function() {
        setTimeout(function() {rightFistResult.call(this)}, 2000);
-        setTimeout(function(){ rightFistResultScissors.call(this)}, 2000);
+        setTimeout(function(){rightFistResultScissors.call(this)}, 2000);
     });
 
-    //left fist randomly display a weapon
-    var randomNum = Math.floor (Math.random() * weapons.length ) +1;
-    console.log(randomNum);
+    //left fist randomly displays a weapon
 
+    // //Display leftFistResult
+
+    function leftFistResult() {
+        var randomNum = Math.floor (Math.random() * (weapons.length -1)) +0;
+        // document.getElementById('result-left-rock').src = weapons[randomNum];
+        // $("#left-first-rock").css('display', 'inline-block');
+        console.log("look here!");
+        console.log(randomNum);
+    }
 
 
 

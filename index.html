@@ -4,52 +4,55 @@
     <meta charset="UTF-8">
     <title>Rock, paper, scissors</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Poppins" rel="stylesheet">
+
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="style.css" >
 </head>
 <body>
     <div class="container">
         <div class="title">
-            <h1 class="text-center text-danger">Choose your weapon</h1>
+            <h1 class="text-center">Choose your weapon</h1>
         </div>
         <div class="row buttons">
-            <div class="col-xs-4"><button class="btn btn-block" id="rock"><i class="fa fa-hand-rock-o"></i>&nbsp;Rock</button></div>
-            <div class="col-xs-4"><button class="btn btn-block" id="paper"><i class="fa fa-hand-paper-o"></i>&nbsp;Paper</button></div>
-            <div class="col-xs-4"><button class="btn btn-block" id="scissors"><i class="fa fa-hand-scissors-o"></i>&nbsp;Scissors</button></div>
+            <div class="col-xs-4"><button class="weapon btn btn-block" id="rock"><i class="fa fa-hand-rock-o"></i>&nbsp;Rock</button></div>
+            <div class="col-xs-4"><button class="weapon btn btn-block" id="paper"><i class="fa fa-hand-paper-o"></i>&nbsp;Paper</button></div>
+            <div class="col-xs-4"><button class="weapon btn btn-block" id="scissors"><i class="fa fa-hand-scissors-o"></i>&nbsp;Scissors</button></div>
         </div>&nbsp;
         <div class="row fists" id="myContainer">
             <div class="col-xs-6" id="leftFistShake">
-                <img id="left-fist" class="img-responsive" src="images/left_fist.png">
-                <img id="result-left-rock" class="img-responsive small" src="images/rock.png" style="display:none">
-                <img id="result-left-scissors" class="img-responsive small" src="images/scissors.png" style="display:none">
-                <img id="result-left-paper" class="img-responsive small" src="images/paper1.png" style="display:none">
+                <img id="left-fist" class="fist-image img-responsive" src="images/left_fist.png">
+                <img id="result-left-rock" class="weapon-image img-responsive small" src="images/rock.png" style="display:none">
+                <img id="result-left-scissors" class="weapon-image img-responsive small" src="images/scissors.png" style="display:none">
+                <img id="result-left-paper" class="weapon-image img-responsive small" src="images/paper1.png" style="display:none">
             </div>
             <div class="col-xs-0">
             </div>
             <div class="col-xs-6" id="rightFistShake">
-                <img id="right-fist" class="img-responsive" src="images/right_fist.png">
-                <img id="result-right-rock" class="img-responsive small" src="images/rock.png" style="display:none">
-                <img id="result-right-scissors" class="img-responsive small" src="images/scissors.png" style="display:none">
-                <img id="result-right-paper" class="img-responsive small" src="images/paper1.png" style="display:none">
+                <img id="right-fist" class="fist-image img-responsive" src="images/right_fist.png">
+                <img id="result-right-rock" class="weapon-image img-responsive small" src="images/rock.png" style="display:none">
+                <img id="result-right-scissors" class="weapon-image img-responsive small" src="images/scissors.png" style="display:none">
+                <img id="result-right-paper" class="weapon-image img-responsive small" src="images/paper1.png" style="display:none">
             </div>
         </div>
         <div class="row captions">
             <div class="col-xs-4" id="captionLeft">
-                <p>Computer</p>
+                <h3>computer</h3>
             </div>
             <div class="col-xs-4"></div>
             <div class="col-xs-4" id="captionRight">
-                <p>You</p>
+                <h3>you</h3>
             </div>
         </div>
     </div>
     <footer>
-        <div class="main-nav">
-            <a href="index.html">Home</a>
-            <a href="../Blog/index.html" target="_blank">Blog</a>
-        </div>
+        <!--<div class="main-nav">-->
+            <!--<a href="index.html">Home</a>-->
+            <!--<a href="../Blog/index.html" target="_blank">Blog</a>-->
+        <!--</div>-->
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="rpsgame.js"></script>
+    <script src="rps.js"></script>
+    <!--<script src="rpsgame.js"></script>-->
 </body>
 </html>

@@ -1,7 +1,13 @@
 body {
-    background-color: cadetblue;
+    background-color: #171328;
 }
 
+h1 {
+    color: #B42402;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+
+}
 #myContainer {
     position: relative;
 }
@@ -11,6 +17,10 @@ body {
     display: block;
     width: 58%;
     margin-top: 13px;
+}
+
+.fists {
+    padding-top: 35px;
 }
 
 #leftFistShake {
@@ -25,20 +35,29 @@ body {
 
 #captionLeft {
     margin-top: 15px;
-
 }
+
+#captionLeft > h3 {
+    text-transform: uppercase;
+    color: #B49302;
+    /*text-align: center;*/
+}
+
 #captionRight {
     margin-top: 15px;
 }
 
 
-#captionRight > p {
+#captionRight > h3 {
+    text-transform: uppercase;
     text-align: center;
+    color: #B49302;
 }
 
-.main-nav {
-    text-align: center;
-}
+/*.main-nav {*/
+    /*text-align: center;*/
+    /*background-color: #221849;*/
+/*}*/
 /*Animate and shake move
 ========================*/
 .animated {
