@@ -6,12 +6,23 @@ h1 {
     color: #B42402;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
-
+    margin-top: 44px;
 }
+
 #myContainer {
     position: relative;
 }
 
+.buttons {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+}
+
+.centered{
+    float: none;
+    margin: 0 auto;
+}
 
 .btn-block {
     display: block;
@@ -40,8 +51,10 @@ h1 {
 #captionLeft > h3 {
     text-transform: uppercase;
     color: #B49302;
-    /*text-align: center;*/
+    text-align: center;
 }
+
+
 
 #captionRight {
     margin-top: 15px;
@@ -124,20 +137,10 @@ h1 {
 
 /* Styling open fist weapons
 =============================*/
-.rock {
 
-}
-
-/* .paper {
-    height:110px;
-    width: 110px;
-
-} */
 .small {
     max-height: 150px;
 }
- .scissors {
 
- }
 
 
